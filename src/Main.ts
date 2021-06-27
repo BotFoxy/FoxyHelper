@@ -4,5 +4,5 @@ import * as Settings from '../settings.json';
 
 require('../../src/FoxyReply.js');
 
-const FoxyHelper = new Helper({ws:{intents: Intents.NON_PRIVILEGED}}, Settings);
+const FoxyHelper = new Helper({ws:{intents: Intents.ALL}}, Settings);
 FoxyHelper.start();
